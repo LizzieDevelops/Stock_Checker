@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Price Tracker</title>
+    
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Link to external JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1>Real-Time Stock Tracker</h1>
+
+    <form id="stock-form">
+        <input type="text" id="new-ticker" placeholder="Enter stock ticker" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <p id="timer-update">Next update in <span id="timer">--</span> seconds</p>
+
+    <div id="ticker-grid"></div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* BASE STYLING */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #0a1e3f;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+input#new-ticker {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #1f65ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #104ec0;
+}
+
+/* TICKER GRID */
+#ticker-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stock-box {
+    background-color: #13294b;
+    border-radius: 10px;
+    padding: 15px;
+    width: 180px;
+    box-shadow: 0 0 10px rgba(0, 128, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.stock-box h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.stock-box p {
+    margin: 6px 0;
+    font-size: 1.1rem;
+}
+
+.remove-btn {
+    margin-top: 10px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+/* COLOR CLASSES */
+.dark-red { color: #ff4c4c; }
+.red { color: #ff9999; }
+.gray { color: #cccccc; }
+.green { color: #90ee90; }
+.dark-green { color: #00ff00; }
+
+/* FLASH ANIMATION */
+.red-flash {
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    transition: background-color 0.5s;
+}
+
+.green-flash {
+    background-color: rgba(0, 255, 0, 0.2) !important;
+    transition: background-color 0.5s;
+}
+
+.gray-flash {
+    background-color: rgba(128, 128, 128, 0.2) !important;
+    transition: background-color 0.5s;
+}
